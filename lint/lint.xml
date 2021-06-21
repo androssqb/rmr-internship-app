@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!--START - Correctness-->
+    <issue id="GradleDependency" severity="ignore" />
+    <!--END - Correctness-->
+
+    <!--START - Security-->
+    <!--END - Security-->
+
+    <!--START - Performance-->
+    <!--END - Performance-->
+
+    <!--START - Usability-->
+    <issue id="ConvertToWebp" severity="warning" />
+    <!--END - Usability-->
+
+    <!--START - Accessibility-->
+    <issue id="ContentDescription" severity="ignore" />
+    <!--END - Accessibility-->
+
+    <!--START - Internationalization-->
+    <issue id="HardcodedText" severity="error" />
+    <!--END - Internationalization-->
+</lint>

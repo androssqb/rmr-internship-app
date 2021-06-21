@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_profile_friends_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.friends.ProfileFriendsFragment">
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/profile_friends_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/padding_dp_8"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</FrameLayout>

@@ -1,0 +1,72 @@
+stages:
+  - check
+  - danger
+
+.default:
+  tags:
+    - android
+  only:
+    - merge_requests
+
+.gradle:
+  extends: .default
+  image: androidsdk/android-30
+  variables:
+    GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.unsafe.watch-fs=false"
+  before_script:
+    - export GRADLE_USER_HOME=$(pwd)/.gradle
+  after_script:
+    - ./prepare_cache.sh
+  cache:
+    key: ${CI_PROJECT_ID}
+    policy: pull-push
+    paths:
+      - .gradle/wrapper
+      - .gradle/caches/modules-2
+      - .gradle/caches/build-cache-1
+
+.ruby:
+  extends: .default
+  image: ruby:2.7-alpine
+  cache:
+    key: ${CI_PROJECT_ID}-ruby
+    paths:
+      - vendor
+  before_script:
+    - apk --no-cache add make g++ git
+    - gem install bundler
+    - bundle config set path 'vendor'
+    - bundle install -j $(nproc)
+  after_script:
+    - bundle clean --force
+
+###############################################################################
+# Check
+###############################################################################
+check:
+  extends: .gradle
+  stage: check
+  interruptible: true
+  script:
+    - ./gradlew detektDebug app:lintDebug testDebug
+    - touch build/reports/success
+  artifacts:
+    when: always
+    expire_in: 1 hour
+    paths:
+      - build/reports/*
+  allow_failure: true
+
+###############################################################################
+# Danger
+###############################################################################
+
+danger:
+  extends: .ruby
+  stage: danger
+  interruptible: true
+  script:
+    - bundle exec danger --fail-on-errors=true
+  only:
+    - merge_requests
+

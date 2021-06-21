@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_login_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/login_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_dp_40"
+        android:importantForAccessibility="no"
+        android:src="@drawable/image_login_illustration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_title_description"
+        android:textAppearance="?attr/textAppearanceHeadline1"
+        app:layout_constraintEnd_toEndOf="@id/login_image"
+        app:layout_constraintStart_toStartOf="@id/login_image"
+        app:layout_constraintTop_toBottomOf="@id/login_image" />
+
+    <TextView
+        android:id="@+id/login_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/login_subtitle_description"
+        android:textAppearance="?attr/textAppearanceBody1"
+        app:layout_constraintEnd_toEndOf="@id/login_title"
+        app:layout_constraintStart_toStartOf="@id/login_title"
+        app:layout_constraintTop_toBottomOf="@id/login_title" />
+
+    <Button
+        android:id="@+id/login_sign_in_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height_dp_55"
+        android:layout_marginHorizontal="@dimen/margin_dp_16"
+        android:layout_marginTop="88dp"
+        android:text="@string/login_sign_in_button_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_subtitle" />
+
+    <Button
+        android:id="@+id/login_sign_up_button"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height_dp_55"
+        android:layout_marginHorizontal="@dimen/margin_dp_16"
+        android:layout_marginTop="24dp"
+        android:text="@string/login_sing_up_button_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_sign_in_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

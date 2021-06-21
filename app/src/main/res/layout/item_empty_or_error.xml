@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/empty_or_error_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.views.ItemEmptyOrError"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/empty_or_error_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="72dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/image_feed_empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/empty_or_error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feed_empty_title_description"
+        android:textAppearance="?attr/textAppearanceHeadline1"
+        app:layout_constraintEnd_toEndOf="@id/empty_or_error_image"
+        app:layout_constraintStart_toStartOf="@id/empty_or_error_image"
+        app:layout_constraintTop_toBottomOf="@id/empty_or_error_image" />
+
+    <TextView
+        android:id="@+id/empty_or_error_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:maxEms="13"
+        android:text="@string/feed_empty_subtitle_description"
+        android:textAppearance="?attr/textAppearanceBody1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/empty_or_error_title" />
+
+    <Button
+        android:id="@+id/empty_or_error_button"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height_dp_55"
+        android:layout_marginHorizontal="@dimen/padding_dp_8"
+        android:layout_marginTop="24dp"
+        android:text="@string/feed_search_friends_button_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/empty_or_error_subtitle" />
+
+</merge>

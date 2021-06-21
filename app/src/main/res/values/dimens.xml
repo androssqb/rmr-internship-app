@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_corner_radius_dp_14">14dp</dimen>
+    <dimen name="button_height_dp_55">55dp</dimen>
+    <dimen name="text_input_stroke_width_dp_2">2dp</dimen>
+    <dimen name="bottom_navigation_corner_radius_dp_30">30dp</dimen>
+    <dimen name="card_corner_radius_dp_24">24dp</dimen>
+
+    <dimen name="feed_no_image_margin_160_dp">160dp</dimen>
+
+    <dimen name="coil_image_corner_radius_12_dp">12dp</dimen>
+
+    <dimen name="loader_default_side">88dp</dimen>
+    <dimen name="loader_default_rect_corner_radius">14dp</dimen>
+    <dimen name="loader_default_inner_space">8dp</dimen>
+
+    <dimen name="feed_header_vertical_padding_dp">14dp</dimen>
+
+    <dimen name="friends_footer_vertical_margin_dp">12dp</dimen>
+    <dimen name="friend_card_vertical_margin_dp">2dp</dimen>
+
+    <dimen name="margin_dp_16">16dp</dimen>
+    <dimen name="padding_dp_8">8dp</dimen>
+    <dimen name="margin_dp_40">40dp</dimen>
+
+    <dimen name="text_sp_36">36sp</dimen>
+    <dimen name="text_sp_16">16sp</dimen>
+</resources>

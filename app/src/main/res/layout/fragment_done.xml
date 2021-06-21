@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_done_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.done.DoneFragment">
+
+    <ImageView
+        android:id="@+id/done_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/margin_dp_40"
+        android:importantForAccessibility="no"
+        android:src="@drawable/image_done_illustration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/done_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done_title_description"
+        android:textAppearance="?attr/textAppearanceHeadline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/done_image" />
+
+    <TextView
+        android:id="@+id/done_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/done_subtitle_description"
+        android:textAppearance="?attr/textAppearanceBody1"
+        app:layout_constraintEnd_toEndOf="@id/done_title"
+        app:layout_constraintStart_toStartOf="@id/done_title"
+        app:layout_constraintTop_toBottomOf="@id/done_title" />
+
+    <Button
+        android:id="@+id/done_button_feed"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height_dp_55"
+        android:layout_marginHorizontal="@dimen/margin_dp_16"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="@dimen/margin_dp_40"
+        android:text="@string/done_button_feed_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

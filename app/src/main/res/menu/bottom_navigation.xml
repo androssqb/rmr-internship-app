@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/feed_graph"
+        android:enabled="true"
+        android:icon="@drawable/icon_bottom_navigation_feed"
+        android:title="@null" />
+    <item
+        android:id="@+id/post_graph"
+        android:enabled="true"
+        android:icon="@drawable/icon_bottom_navigation_post"
+        android:title="@null" />
+    <item
+        android:id="@+id/profile_graph"
+        android:enabled="true"
+        android:icon="@drawable/icon_bottom_navigation_profile"
+        android:title="@null" />
+</menu>

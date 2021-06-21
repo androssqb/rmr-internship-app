@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">AndRoss InternshipApp</string>
+
+    <!--    Snackbar-->
+    <string name="user_credentials_error">Неверные данные пользователя</string>
+    <string name="sign_up_first_user_credentials_error">Проверьте email и пароль</string>
+    <string name="sign_up_second_date_error">Дата должна быть введена в формате ГГГГ-ММ-ДД</string>
+    <string name="sign_up_second_name_error">Проверьте, что используются только латинские символы</string>
+    <string name="sign_up_second_nickname_error">Проверьте, что используются только латинские символы и цифры</string>
+    <string name="user_credentials_email_error">Проверьте правильность e-mail</string>
+    <string name="user_credentials_password_error">Пароль должен быть не короче 8 символов и должен содержать хотя бы одну цифру, большую и маленькую букву.</string>
+    <string name="network_connection_error">Нет соединения с интернетом</string>
+    <string name="session_finished_error">"Сессия истекла, авторизуйтесь снова"</string>
+    <string name="unknown_error">Произошла ошибка. Попробуйте позже.</string>
+    <string name="root_error">Обнаружен root. Ваши данные из приложения могут украсть.</string>
+    <string name="photo_file_creation_error">Не удалось создать файл.</string>
+    <string name="photo_permission_denied_error">Вы не сможите публиковать фотографии</string>
+    <string name="location_permission_denied_error">Вы не сможите указывать местоположение</string>
+
+    <!--    General-->
+    <string name="button_next_title">Далее</string>
+    <string name="e_mail_hint">E-mail</string>
+    <string name="password_hint">Пароль</string>
+    <string name="nick_hint">Никнейм</string>
+    <string name="name_hint">Имя</string>
+    <string name="surname_hint">Фамилия</string>
+    <string name="date_hint">Дата рождения</string>
+    <string name="update_button_title">Обновить</string>
+    <string name="error_title_description">Упс...</string>
+    <string name="error_subtitle_description">Что-то пошло не так</string>
+
+    <!--    Fragment Login-->
+    <string name="login_title_description">Workplaces</string>
+    <string name="login_subtitle_description">Найди своё место</string>
+    <string name="login_sign_in_button_title">Войти</string>
+    <string name="login_sing_up_button_title">Регистрация по почте</string>
+
+    <!--    Fragment Done-->
+    <string name="done_title_description">Nice to meet you</string>
+    <string name="done_subtitle_description">Теперь ты можешь смотреть и делать публикации</string>
+    <string name="done_button_feed_title">Перейти к ленте</string>
+
+    <!--    Fragment Sign In-->
+    <string name="sign_in_toolbar_title">Вход</string>
+    <string name="sign_in_button_sign_up_title">Перейти к регистрации</string>
+
+    <!--    Fragment Sign Up -->
+    <string name="sign_up_toolbar_title">Регистрация</string>
+    <string name="sign_up_registered_button_title">Уже зарегистрирован</string>
+    <string name="sign_up_check_in_button_title">Зарегистрироваться</string>
+
+    <!--    Fragment Feed -->
+    <string name="feed_empty_title_description">Пустота</string>
+    <string name="feed_empty_subtitle_description">Вам нужны друзья, чтобы лента стала живой</string>
+    <string name="feed_search_friends_button_title">Найти друзей</string>
+    <string name="feed_header">Популярное</string>
+
+    <!--    Fragment SearchResultProfile -->
+    <string name="profile_tab_posts_title">Посты</string>
+    <string name="profile_tab_likes_title">Лайки</string>
+    <string name="profile_tab_friends_title">Друзья</string>
+    <string name="profile_posts_subtitle_description">Если молчать, люди никогда не узнают о вас</string>
+    <string name="profile_posts_create_post_button_title">Создать пост</string>
+    <string name="profile_likes_subtitle_description">Вы ещё не поставили ни одного лайка, но можете из ленты</string>
+    <string name="profile_likes_feed_button_title">Перейти к ленте</string>
+    <string name="profile_friends_subtitle_description">Вы пока одиноки в сервисе, но это можно исправить</string>
+    <string name="profile_friends_find_more_button_title">Найти ещё друзей</string>
+
+    <!--    Fragment Edit SearchResultProfile -->
+    <string name="edit_profile_toolbar_title">Редактирование профиля</string>
+    <string name="edit_profile_save_button_title">Сохранить</string>
+
+    <!--    Post -->
+    <string name="unknown_area">Неизвестно</string>
+
+    <!--    Fragment Search-->
+    <string name="search_toolbar_title">Поиск друзей</string>
+    <string name="search_hint">Имя или никнейм друга</string>
+
+    <!--    Fragment Post Creation-->
+    <string name="post_creation_hint">Чем хотите поделиться?</string>
+
+
+</resources>
